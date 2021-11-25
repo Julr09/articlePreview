@@ -5,9 +5,89 @@
 }
 
 body {
+    background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
 }
 
 img {
     max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content {
+    background-color: white;
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.first {
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.second {
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1.875rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.michelle {
+    display: flex;
+}
+
+.michelle img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+.michelle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 .5em 0 2em;
+}
+
+.michelle-text p {
+    margin: 0;
+    padding: 2px;
+}
+
+.name{
+    color: hsl(217, 19%, 35%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.date {
+    color: hsl(214, 17%, 51%);
+}
+
+.share {
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
