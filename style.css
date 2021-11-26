@@ -133,10 +133,15 @@ button {
     margin-right: 1.25rem;
 }
 
+.show {
+    visibility: visible;
+}
+
 @media (min-width: 840px) {
 
     .card {
         display: flex;
+        max-width: 50rem;
     }
 
     .image img {
@@ -150,14 +155,35 @@ button {
         padding: 2rem 2rem 1.5rem;
     }
 
+    .active {
+        border-radius: 10px;
+        justify-content: center;
+        padding: 0;
+        width: 50%;
+        bottom: 6.25rem;
+        left: 61%;
+    }
+
+    .active:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 50%;
+        border: .75rem solid transparent;
+        border-bottom-color: hsl(217, 19%, 35%);
+        transform: rotate(180deg);
+    }
+
+    .active button{
+        display: none;
+    }
 
 }
 
-@media (min-width: 1050px) {
-    .card {
-        max-width: 800px;
-    }
 
+@media (min-width: 1050px) {
 
     .first {
         font-size:  1.5rem;
@@ -166,5 +192,9 @@ button {
 
     .second {
         font-size: 0.84375rem;
+    }
+
+    .active {
+        left: 62%;
     }
 }
